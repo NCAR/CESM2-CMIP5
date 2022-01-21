@@ -1,11 +1,22 @@
-# CESM2-CMIP5
-Location of model code and case setups for the  CESM2-CMIP5 Forcing Experiment
+============
+CESM2-CMIP5
+============
 
-## To obtain the code to run the CESM2-CMIP5 experiments
+Location of model code and case setups for the CESM2-CMIP5 Forcing Experiment
 
-### Clone the repository
-> git clone -b cesm2.1.3_cmip5.n03_release-clm5.0.30 https://github.com/NCAR/CESM2-CMIP5.git cesm2.1.3_cmip5.n03_release-clm5.0.30 
+Obtaining the model code to run the CESM2-CMIP5 experiments
+===========================================================
 
-## Check out the externals 
-cd cesm2.1.3_cmip5.n03_release-clm5.0.30
-./manage_externals/checkout_externals 
+To obtain the CESM code you need to do the following:
+
+#. Clone the repository. ::
+
+      git clone -b cesm2.1.3_cmip5.n03_release-clm5.0.30 https://github.com/NCAR/CESM2-CMIP5.git my_cesm_sandbox
+      
+   This will create a directory ``my_cesm_sandbox`` in your current working directory.
+
+#. Go into the created directory and check out the externals . ::
+
+      cd my_cesm_sandbox
+      ./manage_externals/checkout_externals 
+
