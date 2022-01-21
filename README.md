@@ -1,4 +1,4 @@
-# amwg_cases
+# cesm2_cmip5_cases
 
 # case:
 Location to put the case name!
