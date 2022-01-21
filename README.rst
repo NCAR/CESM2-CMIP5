@@ -2,7 +2,8 @@
 CESM2-CMIP5
 ============
 
-Location of model code and case setups for the CESM2-CMIP5 Forcing Experiment
+This repository contains the model code and case setups for the CESM2-CMIP5 Forcing Experiment
+
 
 Obtaining the model code to run the CESM2-CMIP5 experiments
 ===========================================================
