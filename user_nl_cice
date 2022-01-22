@@ -1,0 +1,5 @@
+histfreq = 'm','d','x','x','x'
+histfreq_n = 1,1,1,1,1
+f_CMIP = 'mdxxx'
+f_vicen = 'mxxxx'
+f_vsnon = 'mxxxx'

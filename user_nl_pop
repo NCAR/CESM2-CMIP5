@@ -1,0 +1,2 @@
+ nhy_flux_monthly_input%filename = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/gx1v6/forcing/ndep_ocn_1850_w_nhx_emis_gx1v6_c160716.nc'
+ nox_flux_monthly_input%filename = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/gx1v6/forcing/ndep_ocn_1850_w_nhx_emis_gx1v6_c160716.nc'

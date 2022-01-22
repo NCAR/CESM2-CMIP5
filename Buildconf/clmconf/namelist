@@ -1,0 +1,138 @@
+&comp_inparm 
+
+finidat = 'b.e21.B1850.f09_g17.CMIP6-piControl.001.clm2.r.0501-01-01-00000.nc'
+
+
+
+
+hist_mfilt(1) = 1
+
+hist_dov2xy(1) = .true.
+
+hist_nhtfrq(1) = 0
+
+hist_type1d_pertape(1) = ' '
+
+hist_fexcl1 += 'PCT_GLC_MEC','PCT_NAT_PFT'
+
+hist_fincl1 += 'EFLX_LH_TOT_ICE', 'FIRE_ICE', 'FLDS_ICE', 'FSH_ICE', 'FSNO_ICE', 'FSR_ICE', 'QFLX_SUB_SNOW_ICE', 'QRUNOFF_ICE', 'QSNOFRZ_ICE', 'QSNOMELT_ICE', 'RAIN_ICE', 'SNOW_ICE', 'SNOWICE_ICE', 'SNOWLIQ_ICE', 'SNOTXMASS_ICE', 'TG_ICE', 'TOPO_COL_ICE', 'TSA_ICE', 'TSOI_ICE'
+
+
+
+hist_mfilt(2) = 1
+
+hist_dov2xy(2) = .false.
+
+hist_nhtfrq(2) = 0
+
+hist_type1d_pertape(2) = ' '
+
+hist_fincl2 += 'TLAI', 'TSA','TREFMNAV','TREFMXAV', 'BTRANMN', 'Vcmx25Z', 'FSH', 'VEGWP', 'FCTR', 'FCEV', 'FGEV', 'FIRE', 'FSR', 'FIRA', 'FSA', 'GSSUNLN', 'GSSHALN', 'TSKIN'
+
+
+
+hist_mfilt(3) = 1
+
+hist_dov2xy(3) = .false.
+
+hist_nhtfrq(3) = 0
+
+hist_type1d_pertape(3) = 'LAND'
+
+hist_fincl3 += 'FSR', 'H2OSNO', 'Q2M', 'SNOWDP', 'TSA', 'TREFMNAV', 'TREFMXAV', 'TG', 'QRUNOFF', 'FSH', 'FIRE', 'FIRA', 'FGR', 'EFLX_LH_TOT', 'RH2M', 'TLAI', 'SOILWATER_10CM', 'TOTSOILLIQ', 'TOTSOILICE', 'U10', 'TSOI_10CM', 'QIRRIG', 'URBAN_HEAT', 'WASTEHEAT', 'TSKIN'
+
+
+
+hist_mfilt(4) = 1
+
+hist_dov2xy(4) = .true.
+
+hist_nhtfrq(4) = -8760
+
+hist_type1d_pertape(4) = ' '
+
+hist_fincl4 += 'PCT_GLC_MEC', 'QICE_FORC', 'TSRF_FORC', 'TOPO_FORC', 'PCT_NAT_PFT','PCT_LANDUNIT','FSNO_ICE'
+
+
+
+hist_mfilt(5) = 1
+
+hist_dov2xy(5) = .false.
+
+hist_nhtfrq(5) = -8760
+
+hist_type1d_pertape(5) = 'LAND'
+
+
+
+
+
+hist_fexcl1 += 'SOIL1C_vr', 'SOIL1N_vr', 'SOIL2C_vr', 'SOIL2N_vr', 'SOIL3C_vr', 'SOIL3N_vr', 'SOILC_vr','SOILN_vr', 'CWDC_vr', 'LITR1C_vr', 'LITR2C_vr', 'LITR3C_vr', 'LITR1N_vr', 'LITR2N_vr', 'LITR3N_vr', 'CWDN_vr', 'SMIN_NO3_vr', 'CONC_O2_UNSAT', 'CONC_O2_SAT','SMIN_NH4_vr','SMINN_vr'
+
+hist_fincl1 += 'LEAFC_TO_LITTER', 'FROOTC_TO_LITTER','LITR1C_TO_SOIL1C','LITR1N_TO_SOIL1N','LITR2C_TO_SOIL1C', 'LITR2N_TO_SOIL1N','LITR3C_TO_SOIL2C','LITR3N_TO_SOIL2N','DWT_WOOD_PRODUCTC_GAIN_PATCH'
+
+
+
+hist_fincl2 += 'GPP', 'NPP', 'AGNPP', 'TOTVEGC', 'NPP_NUPTAKE', 'AR', 'HR', 'HTOP'
+
+
+
+hist_fincl3 += 'GPP', 'NPP', 'AR', 'HR', 'DWT_CONV_CFLUX_PATCH', 'WOOD_HARVESTC', 'DWT_WOOD_PRODUCTC_GAIN_PATCH', 'SLASH_HARVESTC', 'COL_FIRE_CLOSS', 'DWT_SLASH_CFLUX', 'FROOTC:I', 'HTOP'
+
+
+
+hist_fincl4 += 'SOILC_vr', 'SOILN_vr', 'CWDC_vr', 'LITR1C_vr', 'LITR2C_vr', 'LITR3C_vr', 'LITR1N_vr', 'LITR2N_vr', 'LITR3N_vr','CWDN_vr', 'TOTLITC:I', 'TOT_WOODPRODC:I', 'TOTSOMC:I','TOTVEGC:I'
+
+
+
+hist_fincl5 += 'TOTSOMC:I', 'TOTSOMC_1m:I', 'TOTECOSYSC:I', 'TOTVEGC:I', 'WOODC:I', 'TOTLITC:I', 'LIVECROOTC:I', 'DEADCROOTC:I', 'FROOTC:I'
+
+
+
+
+
+hist_fexcl1 += 'PCT_CFT'
+
+
+
+hist_fincl2 += 'GRAINC_TO_FOOD','NFERTILIZATION'
+
+
+
+hist_fincl3 += 'GRAINC_TO_FOOD'
+
+
+
+hist_fincl4 += 'PCT_CFT','CROPPROD1C:I'
+
+
+
+
+
+use_c13 = .true.
+
+use_c14 = .true.
+
+use_c13_timeseries = .true.
+
+use_c14_bombspike = .true.
+
+
+
+hist_fexcl1 += 'C14_SOILC_vr'
+
+hist_fincl4 += 'C14_SOILC_vr'
+
+
+
+
+
+glacier_region_behavior = 'single_at_atm_topo', 'virtual', 'virtual', 'virtual'
+
+
+
+
+
+use_init_interp = .true.
+
+/ 

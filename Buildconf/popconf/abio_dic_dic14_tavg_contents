@@ -1,0 +1,20 @@
+5  ABIO_DIC  # move to [ecosys tracer module] annual stream
+5  ABIO_DIC14  # move to [ecosys tracer module] annual stream
+5  ABIO_D14Cocn  # move to [ecosys tracer module] annual stream
+1  FvICE_ABIO_DIC
+1  FvPER_ABIO_DIC
+1  FvICE_ABIO_DIC14
+1  FvPER_ABIO_DIC14
+1  FG_ABIO_DIC14
+1  FG_ABIO_DIC
+1  ABIO_pCO2SURF
+1  ABIO_DCO2STAR
+1  ABIO_CO2STAR
+1  ABIO_DpCO2
+1  ABIO_pCO2
+1  ABIO_D14Catm
+1  ABIO_ALK_SURF
+1  ABIO_PH_SURF
+1  STF_ABIO_DIC
+1  STF_ABIO_DIC14
+1  Jint_ABIO_DIC14

@@ -1,0 +1,48 @@
+2021-05-28 17:15:34: ./create_newcase --case /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.B1850.f09_g17.cesm2-cmip5.001 --compset B1850cmip6 --res f09_g17 --project CESM0012 --pecount L
+ ---------------------------------------------------
+2021-05-28 17:15:34: Compset longname is 1850_CAM60_CLM50%BGC-CROP-CMIP6DECK_CICE%CMIP6_POP2%ECO%ABIO-DIC_MOSART_CISM2%NOEVOLVE_WW3_BGC%BDRD
+ ---------------------------------------------------
+2021-05-28 17:15:34: Compset specification file is /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/cime_config/config_compsets.xml
+ ---------------------------------------------------
+2021-05-28 17:15:34: Pes     specification file is /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/cime_config/config_pes.xml
+ ---------------------------------------------------
+2021-05-28 17:15:34: Forcing is 1850
+ ---------------------------------------------------
+2021-05-28 17:15:34: Component CPL is Biogeochemistry intercomponent  with diagnostic CO2
+ ---------------------------------------------------
+2021-05-28 17:15:34: Using None coupler instances
+ ---------------------------------------------------
+2021-05-28 17:15:34: Component ATM is CAM cam6 physics:
+ ---------------------------------------------------
+2021-05-28 17:15:34: ATM_GRID is 0.9x1.25
+ ---------------------------------------------------
+2021-05-28 17:15:34: Component LND is clm5.0:BGC (vert. resol. CN and methane) with prognostic crop, with modifications appropriate for CMIP6 DECK experiments:
+ ---------------------------------------------------
+2021-05-28 17:15:34: LND_GRID is 0.9x1.25
+ ---------------------------------------------------
+2021-05-28 17:15:34: This component includes user_mods /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/components/clm//cime_config/usermods_dirs/cmip6_deck
+ ---------------------------------------------------
+2021-05-28 17:15:34: Component ICE is Sea ICE (cice) model version 5 :with modifications appropriate for CMIP6 experiments
+ ---------------------------------------------------
+2021-05-28 17:15:34: ICE_GRID is gx1v7
+ ---------------------------------------------------
+2021-05-28 17:15:34: This component includes user_mods /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/components/cice/cime_config/usermods_dirs/cmip6
+ ---------------------------------------------------
+2021-05-28 17:15:34: Component OCN is POP2 EcosystemAbiotic DIC/DIC14
+ ---------------------------------------------------
+2021-05-28 17:15:34: OCN_GRID is gx1v7
+ ---------------------------------------------------
+2021-05-28 17:15:34: Component ROF is MOSART: MOdel for Scale Adaptive River Transport
+ ---------------------------------------------------
+2021-05-28 17:15:34: ROF_GRID is r05
+ ---------------------------------------------------
+2021-05-28 17:15:34: Component GLC is cism2 (default, higher-order, can run in parallel):cism ice evolution turned off (this is the standard configuration unless you're explicitly interested in ice evolution):
+ ---------------------------------------------------
+2021-05-28 17:15:34: GLC_GRID is gland4
+ ---------------------------------------------------
+2021-05-28 17:15:34: Component WAV is Wave Watch
+ ---------------------------------------------------
+2021-05-28 17:15:34: WAV_GRID is ww3a
+ ---------------------------------------------------
+2021-05-28 17:15:34: ESP_GRID is None
+ ---------------------------------------------------

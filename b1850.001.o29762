@@ -1,0 +1,26 @@
+Setting resource.RLIMIT_STACK to -1 from (-1, -1)
+Generating namelists for /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.B1850.f09_g17.cesm2-cmip5.001
+Creating component namelists
+   Calling /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/components/cam//cime_config/buildnml
+CAM namelist copy: file1 /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.B1850.f09_g17.cesm2-cmip5.001/Buildconf/camconf/atm_in file2 /glade/scratch/hannay/b.e21.B1850.f09_g17.cesm2-cmip5.001/run/atm_in 
+   Calling /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/components/clm//cime_config/buildnml
+   Calling /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/components/cice//cime_config/buildnml
+   Calling /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/components/pop//cime_config/buildnml
+   Calling /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/components/mosart//cime_config/buildnml
+   Running /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/components/cism//cime_config/buildnml 
+   Calling /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/components/ww3//cime_config/buildnml
+   Calling /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/cime/src/components/stub_comps/sesp/cime_config/buildnml
+   Calling /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/cime/src/drivers/mct/cime_config/buildnml
+Finished creating component namelists
+-------------------------------------------------------------------------
+ - Prestage required restarts into /glade/scratch/hannay/b.e21.B1850.f09_g17.cesm2-cmip5.001/run
+ - Case input data directory (DIN_LOC_ROOT) is /glade/p/cesmdata/cseg/inputdata 
+ - Checking for required input datasets in DIN_LOC_ROOT
+-------------------------------------------------------------------------
+2021-08-22 02:01:15 MODEL EXECUTION BEGINS HERE
+run command is mpiexec_mpt -p "%g:"  -np 2160  omplace -tm open64  /glade/scratch/hannay/b.e21.B1850.f09_g17.cesm2-cmip5.001/bld/cesm.exe  >> cesm.log.$LID 2>&1  
+2021-08-22 08:49:12 MODEL EXECUTION HAS FINISHED
+check for resubmit
+dout_s True 
+mach cheyenne 
+resubmit_num 0
