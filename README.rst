@@ -21,3 +21,14 @@ To obtain the CESM code you need to do the following:
       cd my_cesm_sandbox
       ./manage_externals/checkout_externals 
 
+
+Case directories of the CESM2-CMIP5 experiments
+===============================================
+
+The case directories of the CESM2-CMIP5 experiments are available at: 
+    
+    https://github.com/NCAR/CESM2-CMIP5/tags
+
+To obtain a specific case directory (for instance: b.e21.B1850.f09_g17.cesm2-cmip5.001), you need to do the following ::
+
+      git clone --branch b.e21.B1850.f09_g17.cesm2-cmip5.001 https://github.com/NCAR/CESM2-CMIP5 b.e21.B1850.f09_g17.cesm2-cmip5.001
