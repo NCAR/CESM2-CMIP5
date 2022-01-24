@@ -98,6 +98,7 @@
          'SOAG      -> /glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart_aero/emis/RCP85_soag_1.5_surf_2000-2300_c20120214.nc',
          'bc_a4     -> /glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_bc_surf_2000-2300_c20120214.nc',
          'num_a1      -> /glade/p/acom/acom-climate/tilmes/emis/LENS/rcp85_mam4/RCP85_mam4_num_a1_surf_2000-2300_c20120214.nc',
+         'num_a2    -> /glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_num_a2_surf_2000-2300_c20120214.nc',
          'num_a4      -> /glade/p/acom/acom-climate/tilmes/emis/LENS/rcp85_mam4/RCP85_mam4_num_a4_surf_2000-2300_c20120214.nc',
          'pom_a4    -> /glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_oc_surf_2000-2300_c20120214.nc',
          'so4_a1    -> /glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart_aero/emis/RCP85_mam3_so4_a1_surf_2000-2300_c20120214.nc',
@@ -156,7 +157,7 @@
  clubb_c_k10		=  0.5     
  clubb_c_k10h		=  0.3     
  clubb_do_liqsupersat		=  .false. 
- clubb_gamma_coef		= 0.318
+ clubb_gamma_coef		= 0.3180001
  clubb_l_lscale_plume_centered		=  .false. 
  clubb_l_use_ice_latent		=  .false.  
  clubb_lambda0_stability_coef		=  0.04    

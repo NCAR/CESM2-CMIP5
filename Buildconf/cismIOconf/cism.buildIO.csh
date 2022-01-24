@@ -1,15 +1,15 @@
 #! /bin/csh -f
 
 # -----------------------------------------------------------------------------
-# NOTICE: This script was custom-generated for /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.001.
+# NOTICE: This script was custom-generated for /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.101.
 #
 #         DO NOT COPY to another case!
 #
-#         Use this script ONLY in /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.001.
+#         Use this script ONLY in /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.101.
 # -----------------------------------------------------------------------------
 
-set sourcemod_dir  = /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/SourceMods/src.cism/source_cism
-set cism_confIOdir = /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/Buildconf/cismIOconf
+set sourcemod_dir  = /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.101/SourceMods/src.cism/source_cism
+set cism_confIOdir = /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.101/Buildconf/cismIOconf
 
 # -----------------------------------------------------------------------------
 # NOTE: If you are viewing this script within the bld subdirectory of the cism

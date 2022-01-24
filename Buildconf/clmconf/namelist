@@ -131,8 +131,6 @@ glacier_region_behavior = 'single_at_atm_topo', 'virtual', 'virtual', 'virtual'
 
 
 
-
-
 use_init_interp = .true.
 
  model_year_align_ndep = 2006

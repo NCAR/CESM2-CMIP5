@@ -1,5 +1,5 @@
 #  The following operators were requested via
-#  /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/SourceMods/src.pop/ecosys_diagnostics
+#  /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.101/SourceMods/src.pop/ecosys_diagnostics
 sp_CaCO3_form : average
 sp_CaCO3_form_zint : average
 sp_CaCO3_form_zint_100m : average
