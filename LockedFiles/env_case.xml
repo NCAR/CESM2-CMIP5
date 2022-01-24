@@ -163,7 +163,7 @@
       <schema version="2.0">$CIMEROOT/config/xml_schemas/entry_id.xsd</schema>
       <schema version="3.0">$CIMEROOT/config/xml_schemas/entry_id_version3.xsd</schema>
     </entry>
-    <entry id="COMPSET" value="HIST_CAM60_CLM50%BGC-CROP-CMIP6DECK_CICE%CMIP6_POP2%ECO%ABIO-DIC_MOSART_CISM2%NOEVOLVE_WW3_BGC%BDRD">
+    <entry id="COMPSET" value="SSP585_CAM60_CLM50%BGC-CROP-CMIP6DECK_CICE%CMIP6_POP2%ECO%ABIO-DIC_MOSART_CISM2%NOEVOLVE_WW3_BGC%BDRD">
       <type>char</type>
       <desc>Component set long name (for documentation only - DO NOT EDIT)</desc>
     </entry>
@@ -286,7 +286,7 @@
       <desc> master configuration file that specifies all relevant filenames
     and directories to configure a case</desc>
     </entry>
-    <entry id="CASEROOT" value="/glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BHIST.f09_g17.cesm2-cmip5.001">
+    <entry id="CASEROOT" value="/glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.001">
       <type>char</type>
       <desc>full pathname of case</desc>
     </entry>
@@ -298,7 +298,7 @@
       <type>char</type>
       <desc>full pathname of source root directory</desc>
     </entry>
-    <entry id="CASE" value="b.e21.BHIST.f09_g17.cesm2-cmip5.001">
+    <entry id="CASE" value="b.e21.BRCP85.f09_g17.cesm2-cmip5.001">
       <type>char</type>
       <desc>case name</desc>
     </entry>

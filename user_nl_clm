@@ -124,4 +124,11 @@ hist_fincl4 += 'C14_SOILC_vr'
 ! However, this increases the cost of CLM by about 10%
 glacier_region_behavior = 'single_at_atm_topo', 'virtual', 'virtual', 'virtual'
 
+
 use_init_interp = .true.
+ model_year_align_ndep = 2006
+ stream_year_first_ndep = 2006
+ model_year_align_popdens = 2006
+ stream_year_first_popdens = 2006
+ model_year_align_urbantv = 2006
+ stream_year_first_urbantv = 2006

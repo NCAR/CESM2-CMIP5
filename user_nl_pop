@@ -1,1 +1,3 @@
-ndep_shr_stream_file = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/gx1v6/forcing/ndep_ocn_1850-2005_w_nhx_emis_gx1v6_c160717.nc'
+ ndep_shr_stream_file = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/gx1v6/forcing/ndep_ocn_rcp85_w_nhx_emis_gx1v6_c200630.nc'
+ ndep_shr_stream_year_align = 2004
+ ndep_shr_stream_year_first = 2004

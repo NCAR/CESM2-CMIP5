@@ -8,7 +8,7 @@
   histfreq_n = 1, 1, 1, 1, 1
   history_file = "unknown"
   history_precision = 4
-  ice_ic = "b.e21.B1850.f09_g17.cesm2-cmip5.001.cice.r.0250-01-01-00000.nc"
+  ice_ic = "b.e21.BHIST.f09_g17.cesm2-cmip5.001.cice.r.2006-01-01-00000.nc"
   latpnt = 90.0, -65.0
   lcdf64 = .true.
   lonpnt = 0.0, -45.0

@@ -131,20 +131,8 @@
 1  VNS_SUBM
 1  HLS_SUBM
 1  IAGE
-1  CFC_IFRAC
-1  CFC_XKW
-1  CFC_ATM_PRESS
-1  STF_CFC11
-1  STF_CFC12
-1  CFC11
-1  CFC12
-1  SF6_IFRAC
-1  SF6_XKW
-1  SF6_ATM_PRESS
-1  STF_SF6
-1  SF6
 #  The following diagnostics were provided via
-#  /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BHIST.f09_g17.cesm2-cmip5.001/SourceMods/src.pop/ecosys_diagnostics
+#  /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/SourceMods/src.pop/ecosys_diagnostics
 1  ATM_FINE_DUST_FLUX_CPL
 1  ATM_COARSE_DUST_FLUX_CPL
 1  SEAICE_DUST_FLUX_CPL
@@ -1065,7 +1053,7 @@
 1  zsatarag
 1  zsatcalc
 #  end of diagnostics from
-# /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BHIST.f09_g17.cesm2-cmip5.001/SourceMods/src.pop/ecosys_diagnostics
+# /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/SourceMods/src.pop/ecosys_diagnostics
 5  ABIO_DIC  # move to [ecosys tracer module] annual stream
 5  ABIO_DIC14  # move to [ecosys tracer module] annual stream
 5  ABIO_D14Cocn  # move to [ecosys tracer module] annual stream

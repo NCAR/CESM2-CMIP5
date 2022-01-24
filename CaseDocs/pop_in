@@ -8,13 +8,13 @@
  tropic_distribution_type = 'cartesian'
 /
 &io_nml
- log_filename = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/ocn.log.'
+ log_filename = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/ocn.log.781890.chadmin1.ib0.cheyenne.ucar.edu.210930-223850'
  lredirect_stdout = .true.
  luse_pointer_files = .true.
  num_iotasks = 1
 /
 &time_manager_nml
- accel_file = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/gx1v7_depth_accel'
+ accel_file = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/gx1v7_depth_accel'
  allow_leapyear = .false.
  date_separator = '-'
  dt_count =  24
@@ -27,11 +27,11 @@
  imonth0 = 1
  impcor = .true.
  isecond0 = 0
- iyear0 = 1850
+ iyear0 = 2006
  laccel = .false.
  robert_alpha =  1.0 
  robert_nu =     0.1 
- runid = 'b.e21.BHIST.f09_g17.cesm2-cmip5.001'
+ runid = 'b.e21.BRCP85.f09_g17.cesm2-cmip5.001'
  stop_count = 1000
  stop_option = 'nyear'
  time_mix_freq = 17
@@ -48,13 +48,13 @@
  lremove_points = .false.
  n_topo_smooth = 0
  partial_bottom_cells = .false.
- region_info_file = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/gx1v7_region_ids'
+ region_info_file = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/gx1v7_region_ids'
  region_mask_file = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/gx1v7/grid/region_mask_20151008.ieeei4'
  sfc_layer_opt = 'varthick'
  topography_file = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/gx1v7/grid/topography_20161215.ieeei4'
  topography_opt = 'file'
- topography_outfile = './b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.h.topography_bathymetry.ieeer8'
- vert_grid_file = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/gx1v7_vert_grid'
+ topography_outfile = './b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.h.topography_bathymetry.ieeer8'
+ vert_grid_file = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/gx1v7_vert_grid'
  vert_grid_opt = 'file'
 /
 &pop1d_nml
@@ -63,7 +63,7 @@
  init_ts_file = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/gx1v7/ic/ts_WOA13v2_jan_ic_gx1v7_20170706.ieeer8'
  init_ts_file_fmt = 'nc'
  init_ts_option = 'ccsm_continue'
- init_ts_outfile = './b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.h.ts_ic'
+ init_ts_outfile = './b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.h.ts_ic'
  init_ts_outfile_fmt = 'nc'
  init_ts_perturb = 0.0e-3
  init_ts_suboption = 'null'
@@ -75,12 +75,12 @@
  diag_cfl_freq_opt = 'nmonth'
  diag_global_freq = 1
  diag_global_freq_opt = 'nmonth'
- diag_outfile = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/./b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.dd'
+ diag_outfile = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/./b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.dd'
  diag_transp_freq = 1
  diag_transp_freq_opt = 'nmonth'
- diag_transport_file = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/gx1v7_transport_contents'
- diag_transport_outfile = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/./b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.dt'
- diag_velocity_outfile = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/./b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.dv'
+ diag_transport_file = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/gx1v7_transport_contents'
+ diag_transport_outfile = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/./b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.dt'
+ diag_velocity_outfile = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/./b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.dv'
  ldiag_velocity = .true.
 /
 &budget_diagnostics_nml
@@ -96,7 +96,7 @@
  restart_fmt = 'nc'
  restart_freq = 100000
  restart_freq_opt = 'nyear'
- restart_outfile = './b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.r'
+ restart_outfile = './b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.r'
  restart_start =  0
  restart_start_opt = 'nstep'
 /
@@ -107,35 +107,35 @@
  ltavg_one_time_header = .false. .false. .false. .false. .false.
  ltavg_streams_index_present = .true.
  n_tavg_streams = 5
- tavg_contents = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/gx1v7_tavg_contents'
+ tavg_contents = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/gx1v7_tavg_contents'
  tavg_file_freq = 1 1 1 1 1
  tavg_file_freq_opt = 'nmonth' 'nmonth' 'once' 'nmonth' 'nyear'
  tavg_fmt_in = 'nc' 'nc' 'nc' 'nc' 'nc'
  tavg_fmt_out = 'nc' 'nc' 'nc' 'nc' 'nc'
  tavg_freq = 1 1 1 1 1
  tavg_freq_opt = 'nmonth' 'nday' 'once' 'nday' 'nyear'
- tavg_infile = './b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.hrestart.end'
+ tavg_infile = './b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.hrestart.end'
  tavg_offset_days = 2 2 2 2 2
  tavg_offset_months = 1 1 1 1 1
  tavg_offset_years = 1 1 1 1 1
- tavg_outfile = './b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.h'
+ tavg_outfile = './b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.h'
  tavg_start = 0 0 0 0 0
  tavg_start_opt = 'nstep' 'nstep' 'nstep' 'nstep' 'nstep'
  tavg_stream_filestrings = 'nmonth1' 'nday1' 'once' 'ecosys.nday1' 'ecosys.nyear1'
 /
 &history_nml
- history_contents = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/gx1v7_history_contents'
+ history_contents = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/gx1v7_history_contents'
  history_fmt = 'nc'
  history_freq = 1
  history_freq_opt = 'never'
- history_outfile = './b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.hs'
+ history_outfile = './b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.hs'
 /
 &movie_nml
- movie_contents = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/gx1v7_movie_contents'
+ movie_contents = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/gx1v7_movie_contents'
  movie_fmt = 'nc'
  movie_freq = 1
  movie_freq_opt = 'never'
- movie_outfile = './b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.hm'
+ movie_outfile = './b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.hm'
 /
 &solvers
  convergencecheckfreq = 10
@@ -285,7 +285,7 @@
  ah_bkg_bottom = 0.0
  ah_bkg_srfbl = 3.0e7
  ah_bolus = 3.0e7
- buoyancy_freq_filename = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/buoyancy_freq'
+ buoyancy_freq_filename = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/buoyancy_freq'
  buoyancy_freq_fmt = 'nc'
  const_eg = 1.2
  diag_gm_bolus = .true.
@@ -343,7 +343,7 @@
  u_perp = 5.0
  var_viscosity_infile = 'ccsm-internal'
  var_viscosity_infile_fmt = 'bin'
- var_viscosity_outfile = './b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.hv'
+ var_viscosity_outfile = './b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.hv'
  var_viscosity_outfile_fmt = 'nc'
  vconst_1 = 0.6e7
  vconst_2 = 0.5
@@ -511,12 +511,12 @@
  ldebug = .false.
 /
 &overflows_nml
- overflows_diag_outfile = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/./b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.do'
- overflows_infile = '/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run/gx1v7_overflow'
+ overflows_diag_outfile = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/./b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.do'
+ overflows_infile = '/glade/scratch/hannay/b.e21.BRCP85.f09_g17.cesm2-cmip5.001/run/gx1v7_overflow'
  overflows_interactive = .true.
  overflows_on = .true.
  overflows_restart_type = 'ccsm_continue'
- overflows_restfile = './b.e21.BHIST.f09_g17.cesm2-cmip5.001.pop.ro'
+ overflows_restfile = './b.e21.BRCP85.f09_g17.cesm2-cmip5.001.pop.ro'
 /
 &niw_nml
  lniw_mixing = .false.
@@ -541,11 +541,11 @@
 /
 &passive_tracers_on_nml
  abio_dic_dic14_on = .true.
- cfc_on = .true.
+ cfc_on = .false.
  ecosys_on = .true.
  iage_on = .true.
  irf_on = .false.
- sf6_on = .true.
+ sf6_on = .false.
 /
 &estuary_nml
  a1 = 0.876
@@ -565,24 +565,6 @@
 &iage_nml
  init_iage_init_file = 'same_as_TS'
  init_iage_option = 'ccsm_continue'
-/
-&cfc_nml
- cfc_formulation = 'model'
- data_year = 1850
- init_cfc_init_file = 'same_as_TS'
- init_cfc_option = 'ccsm_continue'
- model_year = 1850
- pcfc_file = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/res_indpt/forcing/cfc_atm_20170512.nc'
- pcfc_first_nonzero_year = 1936
-/
-&sf6_nml
- data_year = 1850
- init_sf6_init_file = 'same_as_TS'
- init_sf6_option = 'ccsm_continue'
- model_year = 1850
- psf6_file = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/res_indpt/forcing/sf6_atm_20160311.nc'
- psf6_first_nonzero_year = 1953
- sf6_formulation = 'model'
 /
 &ecosys_driver_nml
  ecosys_qsw_distrb_const = .true.
@@ -624,11 +606,11 @@
  iron_frac_in_seaice_bc = 0.06
  iron_frac_in_seaice_dust = 0.035
  ndep_data_type = 'shr_stream'
- ndep_shr_stream_file = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/gx1v6/forcing/ndep_ocn_1850-2005_w_nhx_emis_gx1v6_c160717.nc'
+ ndep_shr_stream_file = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/gx1v6/forcing/ndep_ocn_rcp85_w_nhx_emis_gx1v6_c200630.nc'
  ndep_shr_stream_scale_factor = 7.1429e+06
- ndep_shr_stream_year_align = 1849
- ndep_shr_stream_year_first = 1849
- ndep_shr_stream_year_last = 2015
+ ndep_shr_stream_year_align = 2004
+ ndep_shr_stream_year_first = 2004
+ ndep_shr_stream_year_last = 2101
  o2_consumption_scalef_input%file_fmt = 'nc'
  o2_consumption_scalef_input%file_varname = 'o2_consumption_scalef'
  o2_consumption_scalef_input%filename = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/gx1v6/forcing/o2_consumption_scalef_0.30_POP_gx1v6_20180623.nc'
@@ -682,7 +664,7 @@
  abio_atm_co2_filename = '/glade/p/cesmdata/cseg/inputdata/ocn/pop/res_indpt/forcing/splco2_20140912.dat'
  abio_atm_co2_opt = 'drv_diag'
  abio_atm_d14c_const = 0.0
- abio_atm_d14c_filename = '/glade/p/cesmdata/cseg/inputdata/lnd/clm2/isotopes/atm_delta_C14_CMIP6_3x1_global_1850-2015_yearly_v2.0_c190528.nc'
+ abio_atm_d14c_filename = '/glade/p/cesmdata/cseg/inputdata/lnd/clm2/isotopes/atm_delta_C14_CMIP6_SSP5B_3x1_global_1850-2100_yearly_c181209.nc'
  abio_atm_d14c_lat_band_vals = -2.3, -4.0, -5.8
  abio_atm_d14c_opt = 'file'
  abio_atm_data_year = 1

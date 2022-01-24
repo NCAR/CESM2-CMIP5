@@ -1,6 +1,6 @@
 &comp_inparm 
 
-finidat = 'b.e21.B1850.f09_g17.cesm2-cmip5.001.clm2.r.0250-01-01-00000.nc'
+finidat = 'b.e21.BHIST.f09_g17.cesm2-cmip5.001.clm2.r.2006-01-01-00000.nc'
 
 
 
@@ -131,5 +131,20 @@ glacier_region_behavior = 'single_at_atm_topo', 'virtual', 'virtual', 'virtual'
 
 
 
+
+
 use_init_interp = .true.
+
+ model_year_align_ndep = 2006
+
+ stream_year_first_ndep = 2006
+
+ model_year_align_popdens = 2006
+
+ stream_year_first_popdens = 2006
+
+ model_year_align_urbantv = 2006
+
+ stream_year_first_urbantv = 2006
+
 / 
