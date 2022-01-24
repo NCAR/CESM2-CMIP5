@@ -12,13 +12,13 @@ To obtain the CESM code you need to do the following:
 
 #. Clone the repository. ::
 
-      git clone -b cesm2-cmip5-tag https://github.com/NCAR/CESM2-CMIP5.git my_cesm_sandbox 
+      git clone https://github.com/NCAR/CESM2-CMIP5 --branch cesm2-cmip5-tag  cesm2-cmip5-tag 
       
-   This will create a directory ``my_cesm_sandbox`` in your current working directory.
+   This will create a directory ``cesm2-cmip5-tag`` in your current working directory.
 
 #. Go into the created directory and check out the externals . ::
 
-      cd my_cesm_sandbox
+      cd cesm2-cmip5-tag
       ./manage_externals/checkout_externals 
 
 
