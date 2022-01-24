@@ -64,7 +64,7 @@
 /
 &cam_initfiles_nl
  bnd_topo		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/topo/fv_0.9x1.25_nc3000_Nsw042_Nrs008_Co060_Fi001_ZR_sgh30_24km_GRNL_c170103.nc'
- ncdata		= 'b.e21.B1850.f09_g17.CMIP6-piControl.001.cam.i.0501-01-01-00000.nc'
+ ncdata		= 'b.e21.B1850.f09_g17.cesm2-cmip5.001.cam.i.0250-01-01-00000.nc'
  use_topo_file		=  .true.  
 /
 &check_energy_nl
@@ -76,45 +76,41 @@
  depvel_file		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart/dvel/depvel_monthly.nc'
  depvel_lnd_file		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart/dvel/regrid_vegetation.nc'
  exo_coldens_file		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart/phot/exo_coldens.nc'
- ext_frc_specifier		= 'SO2         -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so2_elev_1850_c090726.nc',
-         'bc_a4       -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_bc_elev_1850_c090726.nc',
-         'num_a1      -> /glade/p/acom/acom-climate/tilmes/emis/LENS/1850_mam4/ar5_mam4_num_a1_elev_1850_c090726.nc',
-         'num_a4      -> /glade/p/acom/acom-climate/tilmes/emis/LENS/1850_mam4/ar5_mam4_num_a4_elev_1850_c090726.nc',
-         'num_a2      -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_num_a2_elev_1850_c090726.nc',
-         'pom_a4      -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_oc_elev_1850_c090726.nc',
-         'so4_a1      -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so4_a1_elev_1850_c090726.nc',
-         'so4_a2      -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so4_a2_elev_1850_c090726.nc'
- ext_frc_type		= 'CYCLICAL'
+ ext_frc_specifier		= 'SO2         -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so2_elev_1850-2005_c090804.nc',
+         'bc_a4       -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_bc_elev_1850-2005_c090804.nc',
+         'num_a1      -> /glade/p/acom/acom-climate/tilmes/emis/LENS/bhist_mam4/ar5_mam4_num_a1_elev_1850-2005_c090804.nc',
+         'num_a4      -> /glade/p/acom/acom-climate/tilmes/emis/LENS/bhist_mam4/ar5_mam4_num_a4_elev_1850-2005_c090804.nc',
+         'num_a2      -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_num_a2_elev_1850-2005_c090804.nc',
+         'pom_a4      -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_oc_elev_1850-2005_c090804.nc',
+         'so4_a1      -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so4_a1_elev_1850-2005_c090804.nc',
+         'so4_a2      -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so4_a2_elev_1850-2005_c090804.nc'
+ ext_frc_type		= 'INTERP_MISSING_MONTHS'
  fstrat_list		= ' '
  rsf_file		= '/glade/p/cesm/cseg//inputdata/atm/waccm/phot/RSF_GT200nm_v3.0_c080416.nc'
  season_wes_file		= '/glade/p/cesmdata/cseg/inputdata/atm/cam/chem/trop_mozart/dvel/season_wes.nc'
- srf_emis_specifier		= 'DMS       -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/aerocom_mam3_dms_surf_2000_c090129.nc',
-         'SO2       -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so2_surf_1850_c090726.nc',
-         'SOAG      -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_soag_1.5_surf_1850_c100217.nc',
-         'bc_a4     -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_bc_surf_1850_c090726.nc',
-         'num_a1      -> /glade/p/acom/acom-climate/tilmes/emis/LENS/1850_mam4/ar5_mam4_num_a1_surf_1850_c090726.nc',
-         'num_a4      -> /glade/p/acom/acom-climate/tilmes/emis/LENS/1850_mam4/ar5_mam4_num_a4_surf_1850_c090726.nc',
-         'num_a2    -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_num_a2_surf_1850_c090726.nc',
-         'pom_a4    -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_oc_surf_1850_c090726.nc',
-         'so4_a1    -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so4_a1_surf_1850_c090726.nc',
-         'so4_a2    -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so4_a2_surf_1850_c090726.nc'
- srf_emis_type		= 'CYCLICAL'
- tracer_cnst_cycle_yr		= 1850
+ srf_emis_specifier		= 'DMS       -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/aerocom_mam3_dms_surf_1849-2006_c090804.nc',
+         'SO2       -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so2_surf_1850-2005_c090804.nc',
+         'SOAG      -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_soag_1.5_surf_1850-2005_c100429.nc',
+         'bc_a4     -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_bc_surf_1850-2005_c090804.nc',
+         'num_a1      -> /glade/p/acom/acom-climate/tilmes/emis/LENS/bhist_mam4/ar5_mam4_num_a1_surf_1850-2005_c090804.nc',
+         'num_a4      -> /glade/p/acom/acom-climate/tilmes/emis/LENS/bhist_mam4/ar5_mam4_num_a4_surf_1850-2005_c090804.nc',
+         'num_a2    -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_num_a2_surf_1850-2005_c090804.nc',
+         'pom_a4    -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_oc_surf_1850-2005_c090804.nc',
+         'so4_a1    -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so4_a1_surf_1850-2005_c090804.nc',
+         'so4_a2    -> /glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/emis/ar5_mam3_so4_a2_surf_1850-2005_c090804.nc'
+ srf_emis_type		= 'INTERP_MISSING_MONTHS'
  tracer_cnst_datapath		= '/glade/p/cesm/cseg//inputdata/atm/cam/chem/trop_mozart_aero/oxid'
- tracer_cnst_file		= 'oxid_1.9x2.5_L26_1850clim_c091123.nc'
+ tracer_cnst_file		= 'oxid_1.9x2.5_L26_1850-2005_c091123.nc'
  tracer_cnst_filelist		= 'oxid_1.9x2.5_L26_clim_list.c090805.txt'
  tracer_cnst_specifier		= 'O3','OH','NO3','HO2'
- tracer_cnst_type		= 'CYCLICAL'
+ tracer_cnst_type		= 'INTERP_MISSING_MONTHS'
  xactive_prates		= .false.
  xs_long_file		= '/glade/p/cesm/cseg//inputdata/atm/waccm/phot/temp_prs_GT200nm_jpl06_c080930.nc'
 /
 &chem_surfvals_nl
- ch4vmr		=    791.6e-9   
- co2vmr		=    284.7e-6   
- f11vmr		=    12.48e-12  
- f12vmr		=    0.0        
+ bndtvghg		= '/glade/p/cesm/cseg//inputdata/atm/cam/ggas/ghg_hist_1765-2005_c091218.nc'
  flbc_list		= ' '
- n2ovmr		=    275.68e-9  
+ scenario_ghg		= 'RAMPED'
 /
 &cldfrc2m_nl
  cldfrc2m_do_subgrid_growth		= .true.
@@ -173,6 +169,9 @@
 /
 &co2_cycle_nl
  co2_flag		= .true.
+ co2_readflux_aircraft		= .false.
+ co2_readflux_fuel		= .true.
+ co2flux_fuel_file		= '/glade/p/cesm/cseg//inputdata/atm/cam/ggas/co2flux_fossil_1751-2006-monthly_0.9x1.25_c20100204.nc'
 /
 &conv_water_nl
  conv_water_frac_limit		=  0.01d0  
@@ -281,11 +280,14 @@
  waccmx_opt		= 'off'
 /
 &prescribed_ozone_nl
- prescribed_ozone_cycle_yr		=    1850                                                         
  prescribed_ozone_datapath		= '/glade/p/cesm/cseg/inputdata/atm/cam/ozone'
- prescribed_ozone_file		= 'ozone_1.9x2.5_L66_1850clim_c130408.nc'
+ prescribed_ozone_file		= 'ozone_1.9x2.5_L66_1849-2006_c130613.nc'
  prescribed_ozone_name		= 'O3'
- prescribed_ozone_type		= 'CYCLICAL'
+ prescribed_ozone_type		= 'INTERP_MISSING_MONTHS'
+/
+&prescribed_volcaero_nl
+ prescribed_volcaero_datapath		= '/glade/p/cesm/cseg//inputdata/atm/cam/volc'
+ prescribed_volcaero_file		= 'CCSM4_volcanic_1850-2008_prototype1.nc'
 /
 &qneg_nl
  print_qneg_warn		= 'summary'
@@ -312,7 +314,8 @@
          'N:N2O:N2O', 'N:CH4:CH4',
          'N:CFC11:CFC11', 'N:CFC12:CFC12',
          'M:mam4_mode1:/glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/mam4_mode1_rrtmg_aeronetdust_sig1.6_dgnh.48_c140304.nc', 'M:mam4_mode2:/glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/mam4_mode2_rrtmg_aitkendust_c141106.nc',
-         'M:mam4_mode3:/glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/mam4_mode3_rrtmg_aeronetdust_sig1.2_dgnl.40_c150219.nc', 'M:mam4_mode4:/glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/mam4_mode4_rrtmg_c130628.nc'
+         'M:mam4_mode3:/glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/mam4_mode3_rrtmg_aeronetdust_sig1.2_dgnl.40_c150219.nc', 'M:mam4_mode4:/glade/p/cesmdata/cseg/inputdata/atm/cam/physprops/mam4_mode4_rrtmg_c130628.nc',
+         'N:VOLC_MMR:/glade/p/cesm/cseg//inputdata/atm/cam/physprops/rrtmg_Bi_sigma1.8_c100521.nc'
 /
 &ref_pres_nl
  clim_modal_aero_top_press		=  1.D-4 
@@ -321,8 +324,7 @@
  trop_cloud_top_press		=       1.D2 
 /
 &solar_data_opts
- solar_data_type		= 'FIXED'
- solar_data_ymd		=    18500101                                                
+ solar_data_type		= 'SERIAL'
  solar_htng_spctrl_scl		= .true.
  solar_irrad_data_file		= '/glade/p/cesm/cseg//inputdata/atm/cam/solar/SOLAR_SPECTRAL_Lean_1610-2008_annual_c090324.nc'
 /

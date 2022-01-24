@@ -20,8 +20,8 @@
  iminute0 = 0
  imonth0 = 1
  isecond0 = 0
- iyear0 = 1
- runid = 'b.e21.B1850.f09_g17.cesm2-cmip5.001'
+ iyear0 = 1850
+ runid = 'b.e21.BHIST.f09_g17.cesm2-cmip5.001'
  stop_option = 'never'
 /
 &glc_override_nml

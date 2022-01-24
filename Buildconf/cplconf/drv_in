@@ -118,7 +118,7 @@
   budget_ltend = 0
   budget_month = 1
   case_desc = "UNSET"
-  case_name = "b.e21.B1850.f09_g17.cesm2-cmip5.001"
+  case_name = "b.e21.BHIST.f09_g17.cesm2-cmip5.001"
   cime_model = "cesm"
   coldair_outbreak_mod = .true.
   cpl_decomp = 0
@@ -174,7 +174,7 @@
   orb_eccen = 1.e36
   orb_iyear = 1850
   orb_iyear_align = 1850
-  orb_mode = "fixed_year"
+  orb_mode = "variable_year"
   orb_mvelp = 1.e36
   orb_obliq = 1.e36
   outpathroot = "./"
@@ -249,7 +249,7 @@
   restart_ymd = -999
   rof_cpl_dt = 10800
   start_tod = 0
-  start_ymd = 00010101
+  start_ymd = 18500101
   stop_n = 1
   stop_option = "nyears"
   stop_ymd = -999

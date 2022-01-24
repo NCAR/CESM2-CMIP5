@@ -1,7 +1,7 @@
 &modelio
-  diri = "/glade/scratch/hannay/b.e21.B1850.f09_g17.cesm2-cmip5.001/bld/lnd"
-  diro = "/glade/scratch/hannay/b.e21.B1850.f09_g17.cesm2-cmip5.001/run"
-  logfile = "lnd.log.526672.chadmin1.ib0.cheyenne.ucar.edu.210920-085250"
+  diri = "/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/bld/lnd"
+  diro = "/glade/scratch/hannay/b.e21.BHIST.f09_g17.cesm2-cmip5.001/run"
+  logfile = "lnd.log.210923-155041"
 /
 &pio_inparm
   pio_netcdf_format = "64bit_offset"

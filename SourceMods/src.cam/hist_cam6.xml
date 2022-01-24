@@ -1,56 +1,26 @@
-
 <?xml version="1.0"?>
 <namelist_defaults>
 
   <ncdata hgrid="1.9x2.5" nlev="32">cesm2_init/b.e20.B1850.f19_g17.release_cesm2_1_0.020/0301-01-01/b.e20.B1850.f19_g17.release_cesm2_1_0.020.cam.i.0301-01-01-00000.nc</ncdata>
 
-<!-- Solar constant -->
-  <solar_irrad_data_file     >   'atm/cam/solar/SolarForcingCMIP6piControl_c160921.nc'   </solar_irrad_data_file>
-  <solar_data_ymd      >   18500101                                                </solar_data_ymd>
-  <solar_data_type     >    FIXED                                                  </solar_data_type>
+  <solar_irrad_data_file    >   'atm/cam/solar/SolarForcingCMIP6_18491230-22991231_c171031.nc'</solar_irrad_data_file>
 
-<!-- 1850 GHG values -->
-<co2vmr>   284.7e-6   </co2vmr>
-<ch4vmr>   791.6e-9   </ch4vmr>
-<n2ovmr>   275.68e-9  </n2ovmr>
-<f11vmr>   12.48e-12  </f11vmr>
-<f12vmr>   0.0        </f12vmr>
+  <tracer_cnst_datapath     >   'atm/cam/tracer_cnst'                                        </tracer_cnst_datapath>
+  <tracer_cnst_file         >   'tracer_cnst_halons_3D_L70_1849-2015_CMIP6ensAvg_c180927.nc' </tracer_cnst_file>
+  <tracer_cnst_specifier    >   'O3','OH','NO3','HO2'                                        </tracer_cnst_specifier>
+  <tracer_cnst_type         >   'INTERP_MISSING_MONTHS'                                      </tracer_cnst_type>
+  <tracer_cnst_filelist     >   ''                                                           </tracer_cnst_filelist>
 
-<!-- 1850 ozone data -->
-<prescribed_ozone_cycle_yr>   1850                                                         </prescribed_ozone_cycle_yr>
-<prescribed_ozone_datapath>   'atm/cam/ozone_strataero'                                    </prescribed_ozone_datapath>
-<prescribed_ozone_file    >   'ozone_strataero_cyclical_WACCM6_L70_CMIP6-piControl.001_y21-50avg_zm_5day_c180802.nc' </prescribed_ozone_file>
-<prescribed_ozone_name    >   'O3'                                                         </prescribed_ozone_name>
-<prescribed_ozone_type    >   'CYCLICAL'                                                   </prescribed_ozone_type>
+  <prescribed_ozone_datapath>   'atm/cam/ozone_strataero'                                                    </prescribed_ozone_datapath>
+  <prescribed_ozone_file    >   'ozone_strataero_WACCM_L70_zm5day_18500101-20150103_CMIP6ensAvg_c180923.nc'  </prescribed_ozone_file>
+  <prescribed_ozone_name    >   'O3'                                                                         </prescribed_ozone_name>
+  <prescribed_ozone_type    >   'SERIAL'                                                                     </prescribed_ozone_type>
 
-<!-- Surface emissions for MAM -->
-<srf_emis_type>     CYCLICAL   </srf_emis_type>
-<srf_emis_cycle_yr> 1850       </srf_emis_cycle_yr>
+  <srf_emis_type            >    INTERP_MISSING_MONTHS  </srf_emis_type>
+  <ext_frc_type             >    INTERP_MISSING_MONTHS  </ext_frc_type>
 
-<!-- External forcing for BAM or MAM -->
-<ext_frc_type>      CYCLICAL   </ext_frc_type>
-<ext_frc_cycle_yr>  1850       </ext_frc_cycle_yr>
 
-<h2o_ch4ox_ext_file hgrid="1.9x2.5" ver="cam6">atm/cam/chem/emis/CMIP6_emissions_1750_2015_2deg/H2O_emission_CH4_oxidationx2_elev_3DmonthlyL70_1850climoCMIP6piControl001_y21-50avg_1.9x2.5_c190308.nc</h2o_ch4ox_ext_file>
-
-<!-- Prescribed oxidants for aerosol chemistry -->
-<tracer_cnst_cycle_yr >   1850                                                             </tracer_cnst_cycle_yr>
-<tracer_cnst_datapath >   'atm/cam/tracer_cnst'                                            </tracer_cnst_datapath>
-<tracer_cnst_file     >   'tracer_cnst_WACCM6_halons_3DmonthlyL70_1850climoCMIP6piControl001_y21-50avg_c180802.nc' </tracer_cnst_file>
-<tracer_cnst_specifier>   'O3','OH','NO3','HO2'                                            </tracer_cnst_specifier>
-<tracer_cnst_type     >   'CYCLICAL'                                                       </tracer_cnst_type>
-<tracer_cnst_filelist >   ''                                                               </tracer_cnst_filelist>
-
-<!-- Prescribed stratospheric aerosols -->
-<prescribed_strataero_cycle_yr>      1850                                                         </prescribed_strataero_cycle_yr>
-<prescribed_strataero_datapath>      'atm/cam/ozone_strataero'                                    </prescribed_strataero_datapath>
-<prescribed_strataero_file>   'ozone_strataero_cyclical_WACCM6_L70_CMIP6-piControl.001_y21-50avg_zm_5day_c180802.nc' </prescribed_strataero_file>
-<prescribed_strataero_use_chemtrop>  .true.                                                       </prescribed_strataero_use_chemtrop>
-<prescribed_strataero_type>          'CYCLICAL'                                                   </prescribed_strataero_type>
-
-<h2o_ch4ox_ext_file>atm/cam/chem/emis/elev/H2O_emission_CH4_oxidationx2_elev_3DmonthlyL70_1850climoCMIP6piControl001_y21-50avg_c180802.nc</h2o_ch4ox_ext_file>
-
-<fincl1  hgrid="1.9x2.5">
+<fincl1 hgrid="1.9x2.5">
          'dst_a1', 'dst_c1', 'dst_a3', 'dst_c3', 'dst_a1_SRF', 'dst_a3_SRF', 'dst_a1DDF', 'dst_a1SFWET', 'dst_c1DDF',
          'dst_c1SFWET', 'dst_a3DDF', 'dst_a3SFWET', 'dst_c3DDF', 'dst_c3SFWET', 'SSAVIS', 'AODABS', 'AODDUST2', 'bc_a1',
          'bc_a4', 'dst_a1', 'dst_a2', 'dst_a3', 'ncl_a1', 'ncl_a1', 'ncl_a2', 'ncl_a3', 'pom_a1',
@@ -82,5 +52,8 @@
          'bc_a4SFWET', 'bc_a4_SRF', 'bc_c1', 'bc_c1DDF', 'bc_c1SFWET', 'num_a2', 'num_a3', 'num_a4', 'so4_a1',
          'so4_a2', 'so4_a3', 'so4_c1', 'O3', 'O3colAbove'
 </fincl1>
+
+  <!-- sim_year used for CO2 cycle namelist settings -->
+  <sim_year>1850-2000</sim_year>
 
 </namelist_defaults>

@@ -6,7 +6,7 @@
  create_crop_landunit = .true.
  dtime = 1800
  fatmlndfrc = '/glade/p/cesmdata/cseg/inputdata/share/domains/domain.lnd.fv0.9x1.25_gx1v7.151020.nc'
- finidat = 'b.e21.B1850.f09_g17.CMIP6-piControl.001.clm2.r.0501-01-01-00000.nc'
+ finidat = 'b.e21.B1850.f09_g17.cesm2-cmip5.001.clm2.r.0250-01-01-00000.nc'
  fsnowaging = '/glade/p/cesmdata/cseg/inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc'
  fsnowoptics = '/glade/p/cesmdata/cseg/inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_c090915.nc'
  fsurdat = '/glade/p/cesmdata/cseg/inputdata/lnd/clm2/surfdata_map/release-clm5.0.30/surfdata_0.9x1.25_hist_78pfts_CMIP5_simyr1850_c200226.nc'
@@ -56,7 +56,7 @@
  hist_type1d_pertape(4) = ' '
  hist_type1d_pertape(5) = 'LAND'
  int_snow_max = 2000.
- irrigate = .false.
+ irrigate = .true.
  maxpatch_glcmec = 10
  maxpatch_pft = 79
  n_melt_glcmec = 10.0d00
@@ -92,23 +92,26 @@
  use_vertsoilc = .true.
 /
 &ndepdyn_nml
- ndep_taxmode = 'cycle'
+ model_year_align_ndep = 1850
+ ndep_taxmode = 'extend'
  ndep_varlist = 'NDEP_year'
  ndepmapalgo = 'bilinear'
  stream_fldfilename_ndep = '/glade/p/cesmdata/cseg/inputdata/lnd/clm2/ndepdata/fndep_clm_hist_simyr1849-2006_1.9x2.5_c100428.nc'
  stream_year_first_ndep = 1850
- stream_year_last_ndep = 1850
+ stream_year_last_ndep = 2015
 /
 &popd_streams
+ model_year_align_popdens = 1850
  popdensmapalgo = 'bilinear'
  stream_fldfilename_popdens = '/glade/p/cesmdata/cseg/inputdata/lnd/clm2/firedata/clmforc.Li_2017_HYDEv3.2_CMIP6_hdm_0.5x0.5_AVHRR_simyr1850-2016_c180202.nc'
  stream_year_first_popdens = 1850
- stream_year_last_popdens = 1850
+ stream_year_last_popdens = 2016
 /
 &urbantv_streams
+ model_year_align_urbantv = 1850
  stream_fldfilename_urbantv = '/glade/p/cesmdata/cseg/inputdata/lnd/clm2/urbandata/CLM50_tbuildmax_Oleson_2016_0.9x1.25_simyr1849-2106_c160923.nc'
  stream_year_first_urbantv = 1850
- stream_year_last_urbantv = 1850
+ stream_year_last_urbantv = 2106
  urbantvmapalgo = 'nn'
 /
 &light_streams
@@ -147,6 +150,10 @@
 &clm_soilhydrology_inparm
 /
 &dynamic_subgrid
+ do_harvest = .true.
+ do_transient_crops = .true.
+ do_transient_pfts = .true.
+ flanduse_timeseries = '/glade/p/cesmdata/cseg/inputdata/lnd/clm2/surfdata_map/release-clm5.0.30/landuse.timeseries_0.9x1.25_hist_78pfts_CMIP5_simyr1850-2015_c200226.nc'
 /
 &cnvegcarbonstate
  initial_vegc = 100.d00
@@ -309,6 +316,6 @@
 !#--------------------------------------------------------------------------------------------------------------------------
 !# lnd_in:: Comment:
 !# This namelist was created using the following command-line:
-!#     /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/components/clm/bld/CLM build-namelist -cimeroot /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/cime/scripts/Tools/../.. -infile /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.B1850.f09_g17.cesm2-cmip5.001/Buildconf/clmconf/namelist -csmdata /glade/p/cesmdata/cseg/inputdata -inputdata /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.B1850.f09_g17.cesm2-cmip5.001/Buildconf/clm.input_data_list -ignore_ic_year -namelist &clm_inparm  start_ymd=00010101 /  -no-megan -use_case 1850_control -res 0.9x1.25 -clm_start_type startup -envxml_dir /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.B1850.f09_g17.cesm2-cmip5.001 -l_ncpl 48 -lnd_frac /glade/p/cesmdata/cseg/inputdata/share/domains/domain.lnd.fv0.9x1.25_gx1v7.151020.nc -glc_nec 10 -co2_ppmv 284.7 -co2_type diagnostic -config /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.B1850.f09_g17.cesm2-cmip5.001/Buildconf/clmconf/config_cache.xml -bgc bgc -crop -clm_accelerated_spinup off -lnd_tuning_mode clm5_0_cam6.0 -mask gx1v7
+!#     /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/components/clm/bld/CLM build-namelist -cimeroot /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/cime/scripts/Tools/../.. -infile /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BHIST.f09_g17.cesm2-cmip5.001/Buildconf/clmconf/namelist -csmdata /glade/p/cesmdata/cseg/inputdata -inputdata /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BHIST.f09_g17.cesm2-cmip5.001/Buildconf/clm.input_data_list -ignore_ic_year -namelist &clm_inparm  start_ymd=18500101 /  -no-megan -use_case 20thC_transient -res 0.9x1.25 -clm_start_type startup -envxml_dir /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BHIST.f09_g17.cesm2-cmip5.001 -l_ncpl 48 -lnd_frac /glade/p/cesmdata/cseg/inputdata/share/domains/domain.lnd.fv0.9x1.25_gx1v7.151020.nc -glc_nec 10 -co2_ppmv 284.7 -co2_type diagnostic -config /glade/p/cesmdata/cseg/runs/cesm2_0/b.e21.BHIST.f09_g17.cesm2-cmip5.001/Buildconf/clmconf/config_cache.xml -bgc bgc -crop -clm_accelerated_spinup off -lnd_tuning_mode clm5_0_cam6.0 -mask gx1v7
 !# For help on options use: /glade/work/hannay/cesm_tags/cesm2.1.3_cmip5.n03_release-clm5.0.30/components/clm/bld/CLM build-namelist -help
 !#--------------------------------------------------------------------------------------------------------------------------

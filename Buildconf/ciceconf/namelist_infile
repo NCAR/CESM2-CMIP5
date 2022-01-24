@@ -1,5 +1,7 @@
 &comp_inparm 
 
+
+
 histfreq = 'm','d','x','x','x'
 
 histfreq_n = 1,1,1,1,1

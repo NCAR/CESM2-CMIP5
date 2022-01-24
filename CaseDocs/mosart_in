@@ -5,7 +5,7 @@
   delt_mosart = 3600
   do_rtm = .true.
   do_rtmflood = .false.
-  finidat_rtm = "b.e21.B1850.f09_g17.CMIP6-piControl.001.mosart.r.0501-01-01-00000.nc"
+  finidat_rtm = "b.e21.B1850.f09_g17.cesm2-cmip5.001.mosart.r.0250-01-01-00000.nc"
   frivinp_rtm = "/glade/p/cesmdata/cseg/inputdata/rof/mosart/MOSART_routing_Global_0.5x0.5_c170601.nc"
   ice_runoff = .true.
   qgwl_runoff_option = "threshold"

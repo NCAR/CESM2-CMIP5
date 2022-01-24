@@ -84,13 +84,13 @@
       Reference directory containing RUN_REFCASE data - used for hybrid or branch runs
     </desc>
     </entry>
-    <entry id="RUN_REFCASE" value="b.e21.B1850.f09_g17.CMIP6-piControl.001">
+    <entry id="RUN_REFCASE" value="b.e21.B1850.f09_g17.cesm2-cmip5.001">
       <type>char</type>
       <desc>
       Reference case for hybrid or branch runs
     </desc>
     </entry>
-    <entry id="RUN_REFDATE" value="0501-01-01">
+    <entry id="RUN_REFDATE" value="0250-01-01">
       <type>char</type>
       <desc>
       Reference date for hybrid or branch runs (yyyy-mm-dd)
@@ -110,7 +110,7 @@
       If TRUE, then the refcase data is prestaged into the executable directory
     </desc>
     </entry>
-    <entry id="RUN_STARTDATE" value="0001-01-01">
+    <entry id="RUN_STARTDATE" value="1850-01-01">
       <type>char</type>
       <desc>
       Run start date (yyyy-mm-dd). Only used for startup or hybrid runs.
@@ -252,7 +252,7 @@
       timing tests.
     </desc>
     </entry>
-    <entry id="JOB_IDS" value="case.run:526672.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:526673.chadmin1.ib0.cheyenne.ucar.edu">
+    <entry id="JOB_IDS" value="case.run:629011.chadmin1.ib0.cheyenne.ucar.edu, case.st_archive:629012.chadmin1.ib0.cheyenne.ucar.edu">
       <type>char</type>
       <desc>List of job ids for most recent case.submit</desc>
     </entry>
@@ -1227,7 +1227,7 @@
     </entry>
   </group>
   <group id="run_component_cam">
-    <entry id="CAM_NML_USE_CASE" value="1850_cam6">
+    <entry id="CAM_NML_USE_CASE" value="hist_cam6">
       <type>char</type>
       <valid_values/>
       <desc>CAM namelist use_case.  Provides the use_case option for the
@@ -1259,7 +1259,7 @@
     </desc>
       <valid_values>clm4_0_CRUv7,clm4_0_GSWP3v1,clm5_0_cam6.0,clm5_0_GSWP3v1,clm5_0_CRUv7,clm4_5_CRUv7,clm4_5_GSWP3v1,clm4_5_cam6.0</valid_values>
     </entry>
-    <entry id="CLM_NML_USE_CASE" value="1850_control">
+    <entry id="CLM_NML_USE_CASE" value="20thC_transient">
       <type>char</type>
       <desc>CLM namelist use_case.
       Determines the use-case that will be sent to the CLM build-namelist utility.
@@ -1351,7 +1351,7 @@
       <valid_values>TRUE,FALSE</valid_values>
       <desc>TRUE means pop uses nitrogen deposition provided by coupler</desc>
     </entry>
-    <entry id="OCN_TRANSIENT" value="unset">
+    <entry id="OCN_TRANSIENT" value="1850-2000">
       <type>char</type>
       <valid_values>unset,CORE2_NYF,CORE2,CORE2_OMIP,JRA,JRA_OMIP,1850-2000,rcp4.5,rcp8.5,ssp126,ssp245,ssp370,ssp585</valid_values>
       <desc>Determine settings for transient forcing datasets (e.g., atmospheric pCFC
