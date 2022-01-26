@@ -5,8 +5,8 @@ CESM2-CMIP5
 This repository contains the model code and case setups for the CESM2-CMIP5 Forcing Experiment
 
 
-Obtaining the model code to run the CESM2-CMIP5 experiments
-===========================================================
+Model code to run the CESM2-CMIP5 experiments
+=============================================
 
 To obtain the CESM code you need to do the following:
 
@@ -33,3 +33,15 @@ To obtain a specific case directory (for instance: b.e21.B1850.f09_g17.cesm2-cmi
 
       git clone https://github.com/NCAR/CESM2-CMIP5 \
       --branch b.e21.B1850.f09_g17.cesm2-cmip5.001  b.e21.B1850.f09_g17.cesm2-cmip5.001
+
+
+Comparing namelists for CESM1, CESM2 and CESM2-CMIP5 experiments
+================================================================
+
+The namelists of CESM1, CESM2 and CESM2-CMIP5 experiments are available at:
+
+To obtain the namelists, you need to do the following:
+
+      git clone https://github.com/cecilehannay/CESM2-CMIP5 \
+      --branch namelists  namelists
+
