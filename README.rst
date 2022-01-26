@@ -10,13 +10,13 @@ Obtaining the model code to run the CESM2-CMIP5 experiments
 
 To obtain the CESM code you need to do the following:
 
-#. Clone the repository. ::
+# Clone the repository ::
 
       git clone https://github.com/NCAR/CESM2-CMIP5 --branch cesm2-cmip5-tag  cesm2-cmip5-tag 
-      
-   This will create a directory ``cesm2-cmip5-tag`` in your current working directory.
 
-#. Go into the created directory and check out the externals . ::
+This will create a directory ``cesm2-cmip5-tag`` in your current working directory.
+
+# Go into the created directory and check out the externals ::
 
       cd cesm2-cmip5-tag
       ./manage_externals/checkout_externals 
@@ -25,9 +25,12 @@ To obtain the CESM code you need to do the following:
 Case directories of the CESM2-CMIP5 experiments
 ===============================================
 
-The case directories of the CESM2-CMIP5 experiments are available at: 
-    
-      `https://github.com/NCAR/CESM2-CMIP5/tags`
+The case directories of the following CESM2-CMIP5 experiments are available ::
+
+      b.e21.B1850.f09_g17.cesm2-cmip5.001: pi-control (500 years)
+      b.e21.BHIST.f09_g17.cesm2-cmip5.001: historical (1850-2005)  
+      b.e21.BRCP85.f09_g17.cesm2-cmip5.001: rcp85 (2006-2100)
+      b.e21.BRCP85.f09_g17.cesm2-cmip5.101: rcp85 (2006-2100) with bugfix for num_a2
 
 To obtain a specific case directory (for instance: b.e21.B1850.f09_g17.cesm2-cmip5.001), you need to do the following ::
 
