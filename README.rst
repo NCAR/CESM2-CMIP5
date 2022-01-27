@@ -2,9 +2,16 @@
 CESM2-CMIP5
 ============
 
-This repository contains the model code and case setups for the CESM2-CMIP5 Forcing Experiment
+This repository contains the model code and case setups for the CESM2-CMIP5 Forcing Experiment. It also contains the namelists for the CESM1, CESM2 and CESM2-CMIP5 experiments to allow a comparison between them. 
 
+Comparing namelists for CESM1, CESM2 and CESM2-CMIP5 experiments
+================================================================
 
+To obtain the namelists of the CESM1, CESM2 and CESM2-CMIP5 experiments, you need to do the following ::
+
+      git clone https://github.com/NCAR/CESM2-CMIP5  --branch namelists  namelists
+      
+      
 Model code to run the CESM2-CMIP5 experiments
 =============================================
 
@@ -22,18 +29,8 @@ This will create a directory ``cesm2-cmip5-tag`` in your current working directo
 
       cd cesm2-cmip5-tag
       ./manage_externals/checkout_externals 
-      
-
-
-Comparing namelists for CESM1, CESM2 and CESM2-CMIP5 experiments
-================================================================
-
-To obtain the namelists of the CESM1, CESM2 and CESM2-CMIP5 experiments, you need to do the following ::
-
-      git clone https://github.com/NCAR/CESM2-CMIP5  --branch namelists  namelists
-      
-      
-
+     
+    
 Case directories of the CESM2-CMIP5 experiments
 ===============================================
 
