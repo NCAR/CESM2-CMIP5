@@ -4,8 +4,6 @@ CESM2-CMIP5 experiments
 
 This repository contains the model code and case setups for the CESM2-CMIP5 Forcing Experiment. It also contains the namelists for the CESM1, CESM2 and CESM2-CMIP5 experiments to allow a comparison between them. 
 
-.. sectnum::
-
 .. contents::
 
 Comparing namelists for CESM1, CESM2 and CESM2-CMIP5 experiments
@@ -52,7 +50,7 @@ To obtain a specific case directory (for instance: b.e21.B1850.f09_g17.cesm2-cmi
 
 
 More details about the setting of the B1850, BHIST and RCP85
-------------------------------------------------------------
+==============================================
 
 B1850
 ~~~~~
