@@ -1,0 +1,33 @@
+&clm_inparm
+ co2_type = 'diagnostic'
+ create_crop_landunit = .false.
+ dtime = 1800
+ fatmlndfrc = '/glade/p/cesm/cseg//inputdata/share/domains/domain.lnd.fv0.9x1.25_gx1v6.090309.nc'
+ finidat = '/glade/p/cesm/cseg//inputdata/ccsm4_init/b40.1850.track1.1deg.006/0863-01-01/b40.1850.track1.1deg.006.clm2.r.0863-01-01-00000.nc'
+ fpftcon = '/glade/p/cesm/cseg//inputdata/lnd/clm2/pftdata/pft-physiology.c110425.nc'
+ fpftdyn = '/glade/p/cesm/cseg/inputdata/lnd/clm2/surfdata/surfdata.pftdyn_0.9x1.25_rcp8.5_simyr1850-2100_c130702.nc'
+ fsnowaging = '/glade/p/cesm/cseg//inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc'
+ fsnowoptics = '/glade/p/cesm/cseg//inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_c090915.nc'
+ fsurdat = '/glade/p/cesm/cseg//inputdata/lnd/clm2/surfdata/surfdata_0.9x1.25_simyr1850_c110921.nc'
+ hist_fincl2 = 'FSNO:A','H2OSNO:A','QRUNOFF:A','RAIN:A','SNOW:A','SOILWATER_10CM:A'
+ hist_mfilt = 1,365
+ hist_nhtfrq = 0,-24
+ maxpatch_glcmec = 0
+ nrevsn = 'b.e11.BRCP85C5CNBDRD.f09_g16.001.clm2.r.2081-01-01-00000.nc'
+ nsegspc = 20
+ urban_hac = 'ON_WASTEHEAT'
+ urban_traffic = .false.
+/
+&ndepdyn_nml
+ model_year_align_ndep = 1850
+ ndepmapalgo = 'bilinear'
+ stream_fldfilename_ndep = '/glade/p/cesm/cseg//inputdata/lnd/clm2/ndepdata/fndep_clm_rcp8.5_simyr1849-2106_1.9x2.5_c100428.nc'
+ stream_year_first_ndep = 1850
+ stream_year_last_ndep = 2100
+/
+#!--------------------------------------------------------------------------------------------------------------------------
+#! lnd_in:: Comment:
+#! This namelist was created using the following command-line:
+#!     /glade/p/work/mai/sandbox/cesm1_1_1_lrg_ens/models/lnd/clm/bld/build-namelist -infile /glade/p/cesm/cseg/runs/cesm1_1/b.e11.BRCP85C5CNBDRD.f09_g16.001/Buildconf/clmconf/cesm_namelist -csmdata /glade/p/cesm/cseg//inputdata -inputdata /glade/p/cesm/cseg/runs/cesm1_1/b.e11.BRCP85C5CNBDRD.f09_g16.001/Buildconf/clm.input_data_list -namelist &clm_inparm  / -use_case 1850-2100_rcp8.5_transient -res 0.9x1.25 -clm_start_type branch -clm_startfile b.e11.BRCP85C5CNBDRD.f09_g16.001.clm2.r.2081-01-01-00000.nc -l_ncpl 48 -lnd_frac /glade/p/cesm/cseg//inputdata/share/domains/domain.lnd.fv0.9x1.25_gx1v6.090309.nc -glc_nec 0 -co2_ppmv 284.7 -co2_type diagnostic -config /glade/p/cesm/cseg/runs/cesm1_1/b.e11.BRCP85C5CNBDRD.f09_g16.001/Buildconf/clmconf/config_cache.xml
+#! For help on options use: /glade/p/work/mai/sandbox/cesm1_1_1_lrg_ens/models/lnd/clm/bld/build-namelist -help
+#!--------------------------------------------------------------------------------------------------------------------------

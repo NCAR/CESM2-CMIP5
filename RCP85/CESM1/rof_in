@@ -1,0 +1,11 @@
+&rtm_inparm
+ do_rtm = .true.
+ frivinp_rtm = '/glade/p/cesm/cseg//inputdata/lnd/clm2/rtmdata/rdirc_0.5x0.5_simyr2000_c101124.nc'
+ ice_runoff = .true.
+ nrevsn_rtm = 'b.e11.BRCP85C5CNBDRD.f09_g16.001.rtm.r.2081-01-01-00000.nc'
+ rtm_tstep = 10800
+ rtmhist_fincl2 = 'QCHANR:A','VOLR:A'
+ rtmhist_mfilt = 1,365
+ rtmhist_ndens = 2
+ rtmhist_nhtfrq = 0,-24
+/
