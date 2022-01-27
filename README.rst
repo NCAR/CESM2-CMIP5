@@ -1,8 +1,12 @@
-============
-CESM2-CMIP5
-============
+=======================
+CESM2-CMIP5 experiments
+=======================
 
 This repository contains the model code and case setups for the CESM2-CMIP5 Forcing Experiment. It also contains the namelists for the CESM1, CESM2 and CESM2-CMIP5 experiments to allow a comparison between them. 
+
+.. sectnum::
+
+.. contents::
 
 Comparing namelists for CESM1, CESM2 and CESM2-CMIP5 experiments
 ================================================================
