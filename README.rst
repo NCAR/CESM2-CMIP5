@@ -2,6 +2,10 @@
 CESM2-CMIP5 experiments
 =======================
 
+The CESM2 with CMIP5 forcing is a publicly available set of climate model simulations intended to disentangle the role of forcing versus model structure between CESM2 and CESM1 for pre-industrial, 20th and 21st centuries simulations.
+
+A description of the project is available at: https://www.cesm.ucar.edu/projects/community-projects/CMIP5/
+
 This repository contains the model code and case setups for the CESM2-CMIP5 Forcing Experiment. It also contains the namelists for the CESM1, CESM2 and CESM2-CMIP5 experiments to allow a comparison between them. 
 
 .. contents::
