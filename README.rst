@@ -10,6 +10,7 @@ Model code to run the CESM2-CMIP5 experiments
 
 To obtain the CESM code you need to do the following:
 
+
 1. Clone the repository ::
 
       git clone https://github.com/NCAR/CESM2-CMIP5 --branch cesm2-cmip5-tag  cesm2-cmip5-tag 
@@ -17,6 +18,7 @@ To obtain the CESM code you need to do the following:
 This will create a directory ``cesm2-cmip5-tag`` in your current working directory.
 
 2. Go into the created directory and check out the externals  ::
+
 
       cd cesm2-cmip5-tag
       ./manage_externals/checkout_externals 
